@@ -69,7 +69,7 @@ export function WhatIfAnalysis() {
       if (!apiKey) throw new Error('API key is missing');
 
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
       const prompt = `As a decision analysis expert, provide a detailed "What If" analysis for this scenario:
 Past Situation: ${pastDecision}
