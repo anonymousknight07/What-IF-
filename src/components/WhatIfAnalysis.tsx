@@ -134,13 +134,13 @@ Please structure your response in these exact sections:
   
     return (
       <div className="mt-8 space-y-6">
-        <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">What-If Analysis Results</h3>
+        <div className="bg-primary/20 backdrop-blur-sm rounded-lg shadow-md p-6 border border-accent/20">
+          <h3 className="text-xl font-semibold text-accent mb-4">What-If Analysis Results</h3>
   
           <div className="space-y-6">
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">Alternative Timeline</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 bg-purple-50 p-4 rounded-lg">
+              <h4 className="font-medium text-accent mb-2">Alternative Timeline</h4>
+              <ul className="list-disc list-inside text-accent/80 space-y-2 bg-primary/30 p-4 rounded-lg">
                 {whatIfResult.impacts.map((impact, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: formatText(impact) }} />
                 ))}
@@ -148,8 +148,8 @@ Please structure your response in these exact sections:
             </div>
   
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">Direct Impacts</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 bg-purple-50 p-4 rounded-lg">
+              <h4 className="font-medium text-accent mb-2">Direct Impacts</h4>
+              <ul className="list-disc list-inside text-accent/80 space-y-2 bg-primary/30 p-4 rounded-lg">
                 {whatIfResult.opportunities.map((opportunity, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: formatText(opportunity) }} />
                 ))}
@@ -157,8 +157,8 @@ Please structure your response in these exact sections:
             </div>
   
             <div>
-              <h4 className="font-medium text-gray-900 mb-2">Long-term Implications</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 bg-green-50 p-4 rounded-lg">
+              <h4 className="font-medium text-accent mb-2">Long-term Implications</h4>
+              <ul className="list-disc list-inside text-accent/80 space-y-2 bg-primary/30 p-4 rounded-lg">
                 {whatIfResult.risks.map((risk, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: formatText(risk) }} />
                 ))}
